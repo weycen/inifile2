@@ -29,11 +29,11 @@ using namespace inifile;
 filepath = "test.ini";
 
 IniFile ini;
-ini.load(filepath);
+ini.Load(filepath);
 
 //获取指定段的指定项的值
 int ret = 0;
-string db_name = ini.getValue("COMMON","DB",ret);
+string db_name = ini.GetValue("COMMON","DB",ret);
 ```
 
 ### 二. 本地测试构建方式
